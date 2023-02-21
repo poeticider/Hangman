@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Hangman from './components/Hangman.js'
+import Buttons from './components/Buttons.js';
+import Footer from './components/Footer.js';
 
 function App() {
+  //array of words for the hangman game
+  let wordArr = ["AMAZING", "GOOD", "WONDERFUL", "TERRIBLE", "AWFUL", "FANTASTIC", "HORRENDOUS", "BAD"];
+
+    //random word generator
+    const word = wordArr[Math.floor(Math.random() * wordArr.length)];
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Buttons />
+        <h1>Hangman</h1>
+        <Hangman word={word}/>
+        <Footer />
+        
     </div>
   );
 }

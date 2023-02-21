@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+HANGMAN
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+------------------Game Instructions-----------------
 
-## Available Scripts
+Objectives: Guess the word correctly by guessing which letters are in the word!
 
-In the project directory, you can run:
+Win Condition: Guess all the letters in the word correctly whist making less than 10 errors!
 
-### `npm start`
+Lose Condition: Make more than 10 errors before guessing the word correctly!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-------------Detailled Instructions----------------
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+At game start, the word you have to guess will be displayed at the top of the page as a series of '_ _ _'.
+Each '_' represents one letter that must be guessed. To guess a letter, press the corrosponding button (ie if you guess 'A' is in the word, you must press the 'A' button). 
 
-### `npm test`
+If your guess-letter is within the word, your guess is deemed correct and ALL instances of this letter will be revealed. However, if your guess-letter is not within the word, then you made an error! This means more of the hangman will be drawn. Make 10 such errors and you lose the game, as the hangman is completed!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+----------------How to install locally--------------------
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Go to the green "Code" button and select "download Zip". Alternatively, use the git clone method which is also available via the green "Code" button.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once you've unzipped the folder, move it to a convenient location on your local machine.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Open your terminal and navigate to the game folder (the one containing the package.json file).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Run npm install. This will replace the node packages that are needed for the game to run.
 
-## Learn More
+Once the folders are downloaded, run npm start from the folder directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app will now open in a new browser window, or you can navigate to it at localhost:3000/.
